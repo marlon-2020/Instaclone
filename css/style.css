@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'oswald';
+    src: url('FontsFree-Net-Billabong.ttf');
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-size:14px;
+    font-family: sans-serif;    
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    display: flex;
+    margin:0;
+    padding:0;
+    justify-content:center;
+}
+main{
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.container.phone{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:50%;
+}
+main div img{
+    height: 50rem;
+}
+
+p.site-name{
+    font-family: 'oswald';
+    font-size:4em;
+}
+.container.crud{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    width:50%;
+    min-height: 35rem;
+}
+
+.r-group:nth-child(1){
+    min-height: 19rem;
+    margin-bottom:10px
+}
+.r-group{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: column;
+    background-color: white;
+    width:100%;
+    padding:1.3rem;
+    border: 1px solid lightgray;
+    
+}
+
+.profile-photo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.photo-user{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 50%;
+    overflow:hidden;
+    width:33%;
+    height:auto;
+}
+.inst-login{
+    margin-top:10px;
+    background-color: #0095f6;
+    color:white;
+    padding:8px;
+    border-radius:4px;
+}
+.inst-logout{
+    color:  #0095f6;
+    margin-top: 5px;
+}
+.not-user{
+    color:rgb(160,160,160);
+}
+.link-blue{
+    color:#0095f6;
+}
+.link-app{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:1.3rem 0;
+}
+.click-app{
+    display:flex;
+    width: 100%;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:1rem;
+}
+.app-download{
+    width:10rem;
+    height:3.3rem;
+    background-size:cover;
+}
+.app-download:nth-child(1){
+    background-image: url('../images/apple-store.png');
+}
+.app-download:nth-child(2){
+    background-image: url('../images/google-store.png');
+}
+
+@media screen and (max-width:1030px) {
+    main{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    main{
+        width:90%;
+    }
+    .container.phone{
+        display:none;
+    }
+    .click-app{
+        flex-direction: column;
+    }
+    .container.crud{
+        width:100%;
+    }
+}
